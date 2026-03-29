@@ -1,19 +1,29 @@
 # SavvaRealm — Forge 1.20.1
 
-Серверный набор модов и конфигов. Папка `libraries` в репозиторий не входит (слишком тяжёлая).
+Серверный набор модов и конфигов. Папка **`libraries` в Git не лежит** — после `git clone` её нет, пока не прогонишь установщик Forge.
 
-## После клона на машину или VPS
+## После клона на VPS / Linux
 
-1. Установи **Java 17**.
-2. В корне сервера выполни установку Forge (подставь свой путь к папке):
+1. Установи **Java 17** (`java -version`).
+2. **Обязательно один раз** собери библиотеки Forge:
 
-   ```text
-   java -jar forge-1.20.1-47.4.10-installer.jar --installServer .
+   ```sh
+   chmod +x install-forge.sh start-server.sh
+   ./install-forge.sh
    ```
 
-3. В `eula.txt` должно быть `eula=true` (уже так в репозитории).
-4. Запуск:
-   - Windows: `start-server.bat`
-   - Linux: `chmod +x start-server.sh` и `./start-server.sh`
+   То же вручную: `java -jar forge-1.20.1-47.4.10-installer.jar --installServer .`
+
+3. Запуск: `./start-server.sh`
+
+## Windows
+
+1. Дважды клик по установщику или в консоли:  
+   `java -jar forge-1.20.1-47.4.10-installer.jar --installServer .`
+2. Запуск: `start-server.bat`
+
+---
+
+В `eula.txt` должно быть `eula=true` (уже в репозитории).
 
 Память JVM настраивается в `user_jvm_args.txt`.
