@@ -1,0 +1,30 @@
+# Собирается установщиком Forge после клона (сотни МБ)
+libraries/
+
+# Миры и прогресс
+world/
+savva-world*/
+*.lock
+
+# Логи и отчёты
+logs/
+crash-reports/
+debug/
+*.log
+
+# Кэш
+*.cache
+
+# Локальные данные игроков (появятся после запуска)
+usercache.json
+usernamecache.json
+ops.json
+whitelist.json
+banned-players.json
+banned-ips.json
+
+# ОС / IDE
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
