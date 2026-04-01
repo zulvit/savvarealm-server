@@ -29,3 +29,14 @@
 - `create-1.20.1-6.0.6.jar` — **Create 6.0.6** (стоит эта версия, чтобы совпадать с CEI ниже).
 - `create_hypertube-0.4.0-FORGE.jar` — **Create: Hypertubes** (трубы для быстрого перемещения).
 - `create_enchantment_industry-1.3.3-for-create-6.0.6.jar` — **Create: Enchantment Industry** (автоматизация зачарований под Create 6.0.6).
+
+## Мобы и небо (клиент)
+
+- `mowziesmobs-1.7.3.jar` — **Mowzie’s Mobs** (тот же jar, что на сервере — обязателен для входа).
+- `StellarView-1.20.1-0.5.2-Forge.jar` — **Stellar View** (звёздное небо, солнце/луна и т.п., только визуал).
+- `better-clouds-1.3.37-beta+1.20.1-forge.rev.e63efe2.jar` — **Better Clouds** (облака; нужен YACL ниже).
+- `yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar` — **YACL** (зависимость Better Clouds).
+
+На сервер в `mods/` кладётся только **Mowzie’s Mobs**; небо/облака — чисто клиентские моды.
+
+Если с **Embeddium/Oculus** будут артефакты или краш — отключи сначала **Better Clouds** или **Stellar View** и проверь снова.
